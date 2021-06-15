@@ -3,31 +3,35 @@
 
 <head>
 
-  <!-- Meta Tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Roots Barber Shop" />
-  <meta property="og:image" content="img/roots-logo-square.PNG" />
-  <meta property="og:description"
-    content="Roots is a traditional barber shop located in the heart of Devon, England." />
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Roots Barber Shop" />
+    <meta property="og:image" content="img/roots-logo-square.PNG" />
+    <meta property="og:description"
+        content="Roots is a traditional barber shop located in the heart of Devon, England." />
 
-  <!-- Custom Styles and Libraries-->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+    <!-- Custom Styles and Libraries-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 
-  <!-- Fonts and Images -->
-  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
-  <link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet" />
+    <!-- Fonts and Images -->
+    <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}"
+        rel="stylesheet" />
 
-  <!-- Favicon -->
-  <link href="{{ url_for('static', filename='img/roots-favicon.PNG') }}" rel="shortcut icon" type="image/png" />
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='img/roots-favicon.PNG') }}" rel="shortcut icon" type="image/png" />
 
-  <!-- Company Name -->
-  <title>Roots Barber Shop</title>
+    <!-- Company Name -->
+    <title>Roots Barber Shop</title>
 
 </head>
 
@@ -37,48 +41,94 @@
 
         <!-- Navigation Toggle -->
         <a class="menu-toggle rounded" href="#">
-          <i class="fas fa-bars fa-2x hvr-grow"></i>
+            <i class="fas fa-bars fa-2x hvr-grow"></i>
         </a>
 
         <!-- Navigation Menu -->
         <nav id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-              <a class="js-scroll-trigger" href="#page-top">
-                <img class="img-fluid nav-img" src="{{ url_for('static', filename='img/roots-favicon.PNG') }}"
-                  alt="Roots Barber Logo">
-              </a>
-            </li>
-      
-            <!--Navigation Links-->
-            <li class="sidebar-nav-item">
-              <a class="js-scroll-trigger" href="{{ url_for('index') }}">Home</a>
-            </li>
-            <li class="sidebar-nav-item">
-              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='about') }}">About</a>
-            </li>
-            <li class="sidebar-nav-item">
-              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='portfolio') }}">Portfolio</a>
-            </li>
-            <li class="sidebar-nav-item">
-              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='booking') }}">Book</a>
-            </li>
-            <li class="sidebar-nav-item">
-              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='testimonials') }}">Testimonials</a>
-            </li>
-            <li class="sidebar-nav-item">
-              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='contact') }}">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      
-      </header>
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a class="js-scroll-trigger" href="#page-top">
+                        <img class="img-fluid nav-img" src="{{ url_for('static', filename='img/roots-favicon.PNG') }}"
+                            alt="Roots Barber Logo">
+                    </a>
+                </li>
 
-      <main>
+                <!--Navigation Links-->
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='about') }}">About</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='portfolio') }}">Portfolio</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='booking') }}">Book</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='testimonials') }}">Testimonials</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='contact') }}">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
 
         {% block content %}
         {% endblock %}
-      
-      </main>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <h2 class="text-white mb-5">Find us on Social Media!</h2>
+            <ul class="list-inline mb-5">
+
+                <!--Facebook-->
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3 hvr-grow"
+                        href="https://en-gb.facebook.com/rootsbarbershopNTD/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+
+                <!--Instagram-->
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3 hvr-grow"
+                        href="https://www.instagram.com/rootsbarbershop_/?hl=en-gb" target="_blank">
+                        <i class="icon-social-instagram"></i>
+                    </a>
+                </li>
+
+                <!--Booksy-->
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white hvr-grow"
+                        href="https://booksy.com/en-gb/41440_roots-barbershop_barber-shop_1104409_north-tawton"
+                        target="_blank">
+                        <i class="fas fa-bold"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!--Roots Copyright-->
+            <p class="small mb-0 text-white"> Copyright - All Rights Reserved - Roots Barber Shop © <span
+                    id="copyright"></span></p>
+
+            <!--Web Developer Info-->
+            <p class="small mb-0 mt-1 text-white">Website Design by
+                <a href="https://www.linkedin.com/in/lewis-wheeler-aa91791a0/" target="_blank"
+                    class="text-decoration-none roots-green hvr-wobble-vertical">
+                    Lewis Wheeler <i class="fab fa-linkedin"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
 
 </body>
