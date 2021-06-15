@@ -30,3 +30,48 @@
   <title>Roots Barber Shop</title>
 
 </head>
+
+<body>
+
+    <header>
+
+        <!-- Navigation Toggle -->
+        <a class="menu-toggle rounded" href="#">
+          <i class="fas fa-bars fa-2x hvr-grow"></i>
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+              <a class="js-scroll-trigger" href="#page-top">
+                <img class="img-fluid nav-img" src="{{ url_for('static', filename='img/roots-favicon.PNG') }}"
+                  alt="Roots Barber Logo">
+              </a>
+            </li>
+      
+            <!--Navigation Links-->
+            <li class="sidebar-nav-item">
+              <a class="js-scroll-trigger" href="{{ url_for('index') }}">Home</a>
+            </li>
+            <li class="sidebar-nav-item">
+              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='about') }}">About</a>
+            </li>
+            <li class="sidebar-nav-item">
+              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='portfolio') }}">Portfolio</a>
+            </li>
+            <li class="sidebar-nav-item">
+              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='booking') }}">Book</a>
+            </li>
+            <li class="sidebar-nav-item">
+              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='testimonials') }}">Testimonials</a>
+            </li>
+            <li class="sidebar-nav-item">
+              <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='contact') }}">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      
+      </header>
+
+</body>
