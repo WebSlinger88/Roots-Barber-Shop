@@ -18,14 +18,17 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 
-    <!-- Fonts and Images -->
-    <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
-        type="text/css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet" />
-    <link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}"
-        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" type="text/css" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" />
+
+    <!-- Simple Line Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
 
     <!-- Favicon -->
     <link href="{{ url_for('static', filename='img/roots-favicon.PNG') }}" rel="shortcut icon" type="image/png" />
@@ -47,6 +50,8 @@
         <!-- Navigation Menu -->
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
+
+                <!-- Logo -->
                 <li class="sidebar-brand">
                     <a class="js-scroll-trigger" href="#page-top">
                         <img class="img-fluid nav-img" src="{{ url_for('static', filename='img/roots-favicon.PNG') }}"
@@ -58,18 +63,23 @@
                 <li class="sidebar-nav-item">
                     <a class="js-scroll-trigger" href="{{ url_for('index') }}">Home</a>
                 </li>
+
                 <li class="sidebar-nav-item">
                     <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='about') }}">About</a>
                 </li>
+
                 <li class="sidebar-nav-item">
                     <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='portfolio') }}">Portfolio</a>
                 </li>
+
                 <li class="sidebar-nav-item">
                     <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='booking') }}">Book</a>
                 </li>
+
                 <li class="sidebar-nav-item">
                     <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='testimonials') }}">Testimonials</a>
                 </li>
+
                 <li class="sidebar-nav-item">
                     <a class="js-scroll-trigger" href="{{ url_for('index', _anchor='contact') }}">Contact</a>
                 </li>
