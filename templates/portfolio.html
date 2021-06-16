@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Page Heading & Logo -->
+<div class="masthead d-flex"></div>
+
+<!------ PORTFOLIO ------>
+<section class="content-section bg-roots-custom text-white text-center">
+
+    <div class="container">
+        <div class="text-center w-0">
+
+            <!-- Title -->
+            <h2 class="mb-3 text-white">Portfolio</h2>
+
+            <!-- Intro Text -->
+            <p class="lead mb-5 text-white">Welcome to Roots Barber's Portfolio! Check out some of our latest cuts.
+                If you see a style you love the look of, let us know and we can try our best to make you look just as
+                awesome!
+            </p>
+        </div>
+
+        <div class="container">
+
+            <!-- Portfolio Images -->
+            <div class="row d-flex flex-wrap align-items-center">
+                {% for image in images %}
+                    <div class="col-12 col-md-6">
+                        <div class="text-center mt-4 port-blk">
+                            <div class="port-wht">
+                                <img src="/static/portfolio/{{ image }}" class="img-fluid port-rad"
+                                    alt="Roots Portfolio Image" />
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- Return Button -->
+            <div class="text-center mt-5">
+                <a class="btn bg-white btn-xl js-scroll-trigger hvr-grow" 
+                    href="{{ url_for('index') }}">
+                    Return Home
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
