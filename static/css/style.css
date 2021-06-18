@@ -87,16 +87,6 @@ li {
   color: #FFF;
 }
 
-/* Map height */
-.map {
-  height: 18rem;
-}
-
-/* Map pointer */
-.map iframe {
-  pointer-events: none;
-}
-
 /* To Top Button position */
 .to-top {
   z-index: 100;
@@ -250,13 +240,6 @@ li {
   display: block;
 }
 
-/* Map */
-.map iframe {
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
-
 /* Footer Styles */
 footer.footer {
   padding-top: 5rem;
@@ -345,13 +328,6 @@ footer.footer .social-link:hover {
   ul,
   li {
     font-size: 1.2rem;
-  }
-}
-
-/* Small screen map size */
-@media (max-width: 992px) {
-  .map {
-    height: 10rem;
   }
 }
 
