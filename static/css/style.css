@@ -1,0 +1,382 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  /* Code to keep footer fixed at bottom */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Website Font */
+body {
+  font-family: 'Averia Serif Libre', cursive !important;
+}
+
+main {
+  /* Code to keep footer fixed at bottom */
+  flex: 1 0 auto;
+}
+
+/* Carousel Images */
+.carousel-item img {
+  width: auto;
+  max-width: 32rem;
+  height: auto;
+  max-height: 32rem;
+  margin: auto;
+  display: block;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+.roots-btn {
+  border: 1px solid #000 !important;
+  background: #007B71 !important;
+  color: #FFF !important;
+}
+
+/* Custom background color */
+.bg-roots-custom {
+  background: #007B71;
+}
+
+.content-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Custom font color */
+.roots-green {
+  color: #007B71;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer developer name */
+.hvr-wobble-vertical:hover {
+  color: #FFF;
+}
+
+/* Map height */
+.map {
+  height: 18rem;
+}
+
+/* Map pointer */
+.map iframe {
+  pointer-events: none;
+}
+
+/* To Top Button position */
+.to-top {
+  z-index: 100;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  display: none;
+}
+
+/* To Top Button style */
+.btn-top {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  background-color: #007B71;
+  border: 1px solid #000;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  position: fixed;
+}
+
+/* Landing page background */
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: url("../img/roots-landing.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/** SIDE MENU **/
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  transition: all 0.4s ease 0s;
+  transform: translateX(250px);
+  background: #000;
+  border-left: 5px solid rgba(0, 123, 113, 1);
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #FFF;
+  background: rgba(0, 123, 113, 1);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  font-size: 1.2rem;
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.nav-img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #fff;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+/* Side-nav hamburger icon */
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  z-index: 999;
+  text-shadow: 0px 0px 3px #000;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover {
+  color: #FFF;
+}
+
+/* Service section icons */
+.service-icon {
+  background-color: #FFF;
+  color: #007B71;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio section */
+.callout {
+  padding: 5rem 0 5rem;
+  background: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.callout h2 {
+  font-weight: 700;
+  display: block;
+}
+
+/* Map */
+.map iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+/* Footer Styles */
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #000;
+}
+
+footer.footer .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #007B71;
+}
+
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.btn-dark {
+  color: #fff !important;
+}
+
+/* Portfolio image borders */
+.port-blk {
+  border: 0.8rem solid #000;
+  border-radius: 6rem;
+}
+
+.port-wht {
+  border: 0.6rem solid #FFF;
+  border-radius: 5rem;
+}
+
+.port-rad {
+  border-radius: 4rem;
+}
+
+/* Font Face Icons */
+@font-face {
+  font-family: 'simple-line-icons';
+  src: url('../fonts/Simple-Line-Icons.eot?v=2.4.0');
+  src: url('../fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('../fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('../fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('../fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('../fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Instagram & Mustache Icons */
+.icon-social-instagram,
+.icon-mustache {
+  font-family: 'simple-line-icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mustache:before {
+  content: "\e014";
+}
+
+.icon-social-instagram:before {
+  content: "\e609";
+}
+
+/****** MEDIA QUERIES ******/
+
+/* Large screen hr tag removal & font size */
+@media (min-width: 992px) {
+  .row hr {
+    display: none;
+  }
+
+  ul,
+  li {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small screen map size */
+@media (max-width: 992px) {
+  .map {
+    height: 10rem;
+  }
+}
+
+/* Large screen masthead sizes and info button position */
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+
+  .info-button {
+    position: absolute;
+    bottom: 12.5rem;
+    left: 18.6%;
+  }
+}
+
+/* Small screen info button position */
+@media (max-width: 992px) {
+  .info-button {
+    position: absolute;
+    bottom: 6rem;
+  }
+}
