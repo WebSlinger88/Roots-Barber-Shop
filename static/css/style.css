@@ -135,7 +135,6 @@ li {
   background-size: cover;
 }
 
-
 /** SIDE MENU **/
 #sidebar-wrapper {
   position: fixed;
@@ -378,5 +377,12 @@ footer.footer .social-link:hover {
   .info-button {
     position: absolute;
     bottom: 6rem;
+  }
+}
+
+/* Landing image size */
+@media (max-width: 992px) {
+  .masthead {
+    height: 45rem;
   }
 }
