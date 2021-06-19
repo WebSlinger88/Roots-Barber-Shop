@@ -87,6 +87,11 @@ li {
   color: #FFF;
 }
 
+iframe {
+  border: 10px solid #000;
+  border-radius: 3rem;
+}
+
 /* To Top Button position */
 .to-top {
   z-index: 100;
@@ -360,5 +365,19 @@ footer.footer .social-link:hover {
 @media (max-width: 992px) {
   .masthead {
     height: 45rem;
+  }
+}
+
+/* Map Size */
+@media (min-width: 992px) {
+  iframe {
+    height: 18rem;
+  }
+}
+
+/* To Top Button position */
+@media (max-width: 992px) {
+.to-top {
+  right: 1rem;
   }
 }
